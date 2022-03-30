@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space is pretty cool.</title>
+        <meta lang="en">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <p>jump to:</p>
+                <a href="#gallery">Gallery</a>
+                <a href="#video">Video</a>
+            </nav>
+        </header>
+
+        <!-- LOGIN FORM -->
+        <section>
+            <h1>Log In</h1>
+            <form>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" name="Submit">
+            </form>
+        </section>
+
+        <main>
+
+            <!-- WORD SALAD -->
+            <section>
+                <h1>About</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde expedita iure assumenda, labore beatae repellat
+                    tempore nam numquam. Rem debitis facilis reiciendis sed cumque culpa animi quasi pariatur temporibus?
+                </p>
+            </section>
+
+            <!-- GALLERY -->
+            <section id="gallery">
+                <h1>Gallery</h1>
+				<div id="image-grid">
+					<div onclick="showImage(event, 0)"> <!-- PHOTO 1 -->
+						<img src="images/thumb/thumb1.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 1)"> <!-- PHOTO 2 -->
+						<img src="images/thumb/thumb2.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 2)"> <!-- PHOTO 3 -->
+						<img src="images/thumb/thumb3.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 3)"> <!-- PHOTO 4 -->
+						<img src="images/thumb/thumb4.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 4)"> <!-- PHOTO 5 -->
+						<img src="images/thumb/thumb5.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 5)"> <!-- PHOTO 6 -->
+						<img src="images/thumb/thumb6.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 6)"> <!-- PHOTO 7 -->
+						<img src="images/thumb/thumb7.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 7)"> <!-- PHOTO 8 -->
+						<img src="images/thumb/thumb8.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 8)"> <!-- PHOTO 9 -->
+						<img src="images/thumb/thumb9.jpg" alt="awesome outer space image">
+					</div>
+				</div>
+
+				<!-- IMAGE MODAL -->
+				<div id="image-modal-container" onclick="closeModal()">
+					<img id="current-image" src="" alt="">
+					<div id="image-tray">
+						<div onclick="showImage(event, 0)"> <!-- PHOTO 1 -->
+							<img src="images/thumb/thumb1.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 1)"> <!-- PHOTO 2 -->
+							<img src="images/thumb/thumb2.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 2)"> <!-- PHOTO 3 -->
+							<img src="images/thumb/thumb3.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 3)"> <!-- PHOTO 4 -->
+							<img src="images/thumb/thumb4.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 4)"> <!-- PHOTO 5 -->
+							<img src="images/thumb/thumb5.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 5)"> <!-- PHOTO 6 -->
+							<img src="images/thumb/thumb6.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 6)"> <!-- PHOTO 7 -->
+							<img src="images/thumb/thumb7.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 7)"> <!-- PHOTO 8 -->
+							<img src="images/thumb/thumb8.jpg" alt="awesome outer space image">
+						</div>
+						<div onclick="showImage(event, 8)"> <!-- PHOTO 9 -->
+							<img src="images/thumb/thumb9.jpg" alt="awesome outer space image">
+						</div>
+					</div>
+				</div>
+		    </section>
+
+            <!-- VIDEO -->
+            <section id="video">
+                <iframe src="https://player.vimeo.com/video/636518224?h=0403fd0e59" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/636518224">REFLECTIVE</a> from <a href="https://vimeo.com/teunvanderzalm">Teun van der Zalm</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </section>
+        </main>
+
+        <footer>
+            <h4>This text is in the footer.</h4>
+        </footer>
+    </body>
+</html>
